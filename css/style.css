@@ -1,0 +1,170 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries furl(or tablets and desktop computers later */
+
+p{
+	color: #ebece7;
+		padding: 10px;
+	margin: 10px;
+	text-align: center;
+	
+	}
+
+body {
+	/*background-image: url("../img/chi2.webp");*/
+	background-image: url("../img/chi.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	background-attachment: fixed;
+	
+
+}
+
+header{
+	color: #ebece7;
+	font-family : "Simonetta", serif;
+	  font-weight: 1200;
+  font-style: normal;
+  font-size: 35px;
+  text-align: center;
+	
+	}
+
+#container {
+	
+}
+
+nav{
+		font-family: "Redacted Script", serif;
+
+	}
+
+	nav a {
+		background: #839dc2;
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		width: 250px;
+		
+	}
+	nav a:hover {
+		background: #c7d2e1;
+		
+		}
+	
+	nav ul {
+		list-style:none;
+		color: #4f5a6b;
+		
+		
+		}
+		
+a {
+	color: #4f5a6b;
+		font-family: "Redacted Script", serif;
+
+	}
+a:hover {
+	
+	}	
+a:active {
+	
+	}
+
+
+
+
+
+/* Class for making YouTube/Vimeo videos responsive */
+
+figure.responsive {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 */
+    height: 0px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+figure.responsive iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for portrait tablets and large phone screens.  */
+@media all and (min-width: 600px) {
+	
+	
+	
+	
+} /* closes 600px+ */
+
+
+
+/* Minimum width for landscape laptops. */
+@media all and (min-width: 768px) {
+	
+	
+	
+	
+} /* closes 768px+ */
+
+
+
+/* Minimum width for larger tablets, laptops and desktops. */
+@media all and (min-width: 992px) {
+	
+	
+	
+	
+} /* closes 992px+ */
+
+
+
+/* Minimum width for larger desktops. */
+@media all and (min-width: 1200px) {
+	
+	
+	
+	
+} /* closes 1200px+ */
+
+
+
