@@ -1,0 +1,194 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+	
+	
+}
+
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+
+
+
+
+
+
+footer {
+	text-align: center;
+	padding: 0.5rem;
+	
+	
+}
+body {
+	background-color: #F4F3EF;
+	
+}   
+h1{
+	font-size: 3rem;
+	padding-bottom: 100px;
+	
+}
+
+p {
+	font-size: 16px;
+    padding: 0;
+	margin: 2em;
+	width: 90vw;
+	line-height: 2.5em;
+	
+}
+h2 {
+	margin: 2em;
+    font-size: 20px;
+	width: 90vw;
+	
+}
+
+
+
+div:nth-child(1) {
+
+		height: 100vh;
+		background-attachment: fixed;
+		background: url('../img/ssb.jpg') no-repeat center center/cover;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		position: relative;
+		color: white;
+		
+		
+		
+	}
+	
+
+img {
+  width: 75%;
+  height: auto;
+
+  
+}
+
+
+
+div:nth-child(3) {
+    height: 100vh;
+    background: url('../img/bbb.jpg') center center/cover no-repeat;
+    display: flex;
+	background-attachment: fixed;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+	marign:0;
+	padding:50px;
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+.scroll-text {
+  
+  opacity: 0;
+  transform: translateX(-500px);
+  transition: opacity 0.6s ease-out, transform 0.9s ease-out;
+}
+
+.scroll-text.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+	
+	
+
+ 
+
+
+
+
+
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+
+
+
+/* Minimum width for landscape laptops. */
+@media all and (min-width: 768px) {
+	
+h1 {
+	font-size: 4rem;
+	padding: 0;
+	
+	
+}
+	
+div:nth-child(1) {
+
+		height: 100vh;
+		background-attachment: fixed;
+		background: url('../img/back.png') no-repeat center center/cover;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		position: relative;
+		color: white;
+		
+		
+		
+		
+}
+	
+	
+	div:nth-child(3) {
+    height: 100vh;
+    background: url('../img/bbb.jpg') center center/cover no-repeat;
+    display: flex;
+	background-attachment: fixed;
+	flex-direction: row;
+    color: white;
+    position: relative;
+    overflow: hidden;
+	marign:0;
+	padding:20px;
+}
+	
+	
+img {
+  width: 40%;
+  height: auto;
+
+  
+}
+	
+	
+	
+	
+	
+} /* closes 768px+ */
+
