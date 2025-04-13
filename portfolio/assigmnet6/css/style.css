@@ -86,7 +86,7 @@ img {
 
 div:nth-child(3) {
     height: 100vh;
-    background: url('../img/bbb.jpg') center center/cover no-repeat;
+    background: url('./../img/bbb.jpg') center center/cover no-repeat;
     display: flex;
 	background-attachment: fixed;
     justify-content: center;
