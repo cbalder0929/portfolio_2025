@@ -1,0 +1,325 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+	background-color: #F0EBDB;
+
+	
+
+	
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+
+header  {
+	background-color:#181F51;
+	width: 100%;
+
+	
+
+ 
+
+	
+	
+}
+header img {
+	
+	  
+
+}
+
+
+
+
+
+
+
+/* Class for making YouTube/Vimeo videos responsive */
+
+figure.responsive {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 */
+    height: 0px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+figure.responsive iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for portrait tablets and large phone screens.  */
+@media all and (min-width: 600px) {
+	
+	
+ header {
+    position: relative;
+    min-height: 60px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+.nav-menu {
+	background-color: #181F51; 
+	color: #F0EBDB; 
+	padding: 0px;
+	transition: all 0.3s ease-in-out;
+	position: absolute;
+    transform: translateY(-50%);
+	width:100%;
+	top: 139px;
+	
+ 
+}
+
+.nav-menu.hidden {
+	display: none;
+}
+
+
+nav ul {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	padding: 0 ;
+	margin: 0;
+	background-color:
+	
+	
+	
+}
+
+a {
+  text-decoration: none; 
+  color: white;
+  font-size: 25px;
+  font-family: Arial, sans-serif; 
+}
+
+nav li {
+	background: linear-gradient(to top, #28A3EF, #181F51);
+	padding: 25px 100px;
+
+}
+
+.navToggle {
+	background-color: #28A3EF;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+	
+    
+
+  
+    
+	
+	
+	
+	
+}
+
+
+
+
+
+
+.logoWrapper {
+	position: relative;
+	
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.infoBox {
+	background-color: white;
+	width: 400px;
+	padding: 5px;
+	font-size: 15px;
+	line-height: 1.2;
+	position: absolute;
+	left: 170px;
+	opacity: 0;
+	top:35px;
+	pointer-events: none;
+	z-index: 100;
+	transition: opacity 0.3s ease;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	border-radius: .5rem;
+
+
+
+}
+.logoWrapper:hover .infoBox {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+.carousel {
+	width: 80vw;
+	height:100vh;
+	margin: 0 auto;
+	margin-top: 2rem;
+	background-color: #E3DECD;
+	position: relative;
+	border-radius: .5rem;
+
+}
+.slide {
+	position:absolute;
+	inset:0;
+	opacity: 0 ;
+	width: 100%;
+	height: 100%;
+	
+	
+}
+.slide[data-active] {
+	opacity:1;
+
+}
+
+
+
+
+.slide > img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	
+
+}
+
+
+.carousel-button {
+	position: absolute;
+	z-index: 2;
+	background: none;
+	border: none;
+	font-size: 5rem;
+	
+	transform: translateY(-50%);
+	color: rgba(255, 255, 255, .5);
+	cursor: pointer;
+	border-radius: .25rem;
+	padding: 0 .5rem;
+	background-color: rgba(0, 0, 0, .1);
+	line-height:10rem;
+	text-align: center;
+	
+}
+.carousel-button:hover,
+.carousel-button:focus {
+	color: white;
+	background-color: rgba(0, 0, 0, .2);
+
+}
+
+.carousel-button:focus {
+	outline: 1px solid black;
+
+}
+.carousel-button.prev {
+	left:1rem;
+	top: 50%
+}
+.carousel-button.next {
+	right: 1rem;
+	top: 50%
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #181F51;
+  color: white;
+}
+
+} /* closes 600px+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Minimum width for landscape laptops. */
+@media all and (min-width: 768px) {
+	
+	
+	
+	
+} /* closes 768px+ */
+
+
+
+/* Minimum width for larger tablets, laptops and desktops. */
+@media all and (min-width: 992px) {
+	
+	
+	
+	
+} /* closes 992px+ */
+
+
+
+/* Minimum width for larger desktops. */
+@media all and (min-width: 1200px) {
+	
+	
+	
+	
+} /* closes 1200px+ */
+
+
+
