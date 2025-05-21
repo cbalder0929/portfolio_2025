@@ -1,0 +1,586 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+	background-color: #F0EBDB;
+	overflow-x: hidden;
+	overflow: visible;
+	height: 350vh;
+	
+
+	
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for tablets and desktop computers later */
+.bottomLeft {
+	background-color: #E3DECD;
+	width: 45%;
+ 	
+}
+.bottom {
+	display: flex;
+	justify-content: space-between;
+	width: 95vw;
+	
+}
+.stockimg {
+	width:60%;
+	padding: 80px;
+}
+.stocktitle {
+	font-size:65px;
+	text-align:center;
+	line-height: 1.2;
+	color:#181F51;
+
+}
+.stocksubtitles {
+	color: #28A3EF;
+	font-size: 45px;
+
+}
+.stockText {
+	width: 75%;
+	font-size: 20px;
+	line-height: 1.5;
+
+}
+	
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+header {
+    position: relative;
+    min-height: 60px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+	background-color:#181F51;
+	max-width: 100%;
+}
+
+.nav-menu {
+	background-color: #181F51; 
+	color: #F0EBDB; 
+	padding: 0px;
+	transition: all 0.3s ease-in-out;
+	width:100%;
+	top: 139px;
+	
+ 
+}
+
+.nav-menu.hidden {
+	display: none;
+}
+
+
+nav ul {
+	list-style-type: none;
+	padding: 0 ;
+	margin: 0;
+	
+	
+}
+li a {
+	display:block;
+	
+
+	
+}
+
+a {
+  text-decoration: none; 
+  color: white;
+  font-size: 25px;
+  font-family: Arial, sans-serif; 
+  
+
+}
+
+nav li {
+	background:  #388EC4;
+	padding: 25px 100px;
+	list-style-type: none;
+
+}
+
+.navToggle {
+	background-color: #28A3EF;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+}
+
+
+.logoWrapper {
+	position: relative;
+	
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.infoBox {
+	background-color: white;
+	width: 400px;
+	padding: 5px;
+	font-size: 15px;
+	line-height: 1.2;
+	position: absolute;
+	left: 170px;
+	opacity: 0;
+	top:35px;
+	pointer-events: none;
+	z-index: 100;
+	transition: opacity 0.3s ease;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	border-radius: .5rem;
+
+
+
+}
+.info {
+	padding:0;
+}
+.logoWrapper:hover .infoBox {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+/* A better looking default horizontal rule */
+hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0px;
+    padding: 0px;
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+/* Minimum width for portrait tablets and large phone screens.  */
+@media all and (min-width: 600px) {
+	
+
+
+} /* closes 600px+ */
+.stockimg {
+	width:60%;
+	padding: 80px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Minimum width for landscape laptops. */
+@media all and (min-width: 768px) {
+.stockimg {
+	width:60%;
+	padding: 80px;
+
+
+}	
+	
+	
+	
+} /* closes 768px+ */
+
+
+
+/* Minimum width for larger tablets, laptops and desktops. */
+@media all and (min-width: 992px) {
+.stockimg {
+	width:60%;
+	padding: 80px;
+
+
+}
+	
+	
+	
+} /* closes 992px+ */
+
+
+
+/* Minimum width for larger desktops. */
+@media all and (min-width: 1200px) {
+	
+header {
+    position: relative;
+    min-height: 60px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+	background-color:#181F51;
+	max-width: 100%;
+}
+
+.nav-menu {
+	background-color: #181F51; 
+	color: #F0EBDB; 
+	padding: 0px;
+	transition: all 0.3s ease-in-out;
+	width:100%;
+	top: 139px;
+	
+ 
+}
+
+.nav-menu.hidden {
+	display: none;
+}
+
+
+nav ul {
+	list-style-type: none;
+	padding: 0 ;
+	margin: 0;
+	display: flex;
+	
+}
+li a {
+	display:block;
+	
+	
+}
+
+a {
+  text-decoration: none; 
+  color: white;
+  font-size: 25px;
+  font-family: Arial, sans-serif; 
+}
+
+nav li {
+	background:  #388EC4;
+	padding: 25px 170px;
+	list-style-type: none;
+
+}
+.carousel > ul {
+	list-style-type: none;
+
+}
+nav li:hover {
+	background: #28A3EF;
+	border: 2px solid;
+
+
+}
+
+.navToggle {
+	background-color: #28A3EF;
+	color: white;
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+}
+
+
+.logoWrapper {
+	position: relative;
+	
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.infoBox {
+	background-color: white;
+	width: 400px;
+	padding: 5px;
+	font-size: 15px;
+	line-height: 1.2;
+	position: absolute;
+	left: 170px;
+	opacity: 0;
+	top:35px;
+	pointer-events: none;
+	z-index: 100;
+	transition: opacity 0.3s ease;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	border-radius: .5rem;
+
+
+
+}
+.logoWrapper:hover .infoBox {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+.carousel {
+	width: 80vw;
+	height:100vh;
+	margin: 0 auto;
+	margin-top: 2rem;
+	background-color: #E3DECD;
+	position: relative;
+	border-radius: .5rem;
+	
+
+}
+.slide {
+	position:absolute;
+	inset:0;
+	opacity: 0 ;
+	width: 100%;
+	height: 100%;
+	
+	
+}
+.slide[data-active] {
+	opacity:1;
+
+}
+
+
+
+
+.slide > img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	
+
+
+
+}
+
+
+.carousel-button {
+	position: absolute;
+	z-index: 2;
+	background: none;
+	border: none;
+	font-size: 5rem;
+	
+	transform: translateY(-50%);
+	color: rgba(255, 255, 255, .5);
+	cursor: pointer;
+	border-radius: .25rem;
+	padding: 0 .5rem;
+	background-color: rgba(0, 0, 0, .1);
+	line-height:10rem;
+	text-align: center;
+	
+}
+.carousel-button:hover,
+.carousel-button:focus {
+	color: white;
+	background-color: rgba(0, 0, 0, .2);
+
+}
+
+.carousel-button:focus {
+	outline: 1px solid black;
+
+}
+.carousel-button.prev {
+	left:1rem;
+	top: 50%
+}
+.carousel-button.next {
+	right: 1rem;
+	top: 50%
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #181F51;
+  color: white;
+}
+
+
+
+
+.topDiv > img {
+	height: 85%;
+	padding: 30px;
+
+
+}	
+.bottomRight > img {
+	width: 85%;
+	padding: 45px;
+}	
+
+.bottomLeft > img {
+	width: 85%;
+
+ } 
+ 
+.quotes {
+	font-size: 45px;
+ 
+ 
+ }
+
+.top {
+	display: flex;
+	justify-content: center;
+	width: 95vw;
+	padding: 50px;
+}
+.topDiv {
+	width: 100%;
+	height: 60vh;
+	background-color: #E3DECD;
+	display: flex;
+	align-items: center;
+}
+.bottomRight {
+	background-color: #E3DECD;
+	width: 45%;
+	position: relative;
+}
+.contentContainer {
+	position: relative;
+	
+}
+
+.bottomLeft {
+	background-color: #E3DECD;
+	width: 45%;
+	position: relative;
+}
+.bottom {
+	display: flex;
+	justify-content: space-between;
+	width: 95vw;
+	
+}
+p {
+	padding: 25px;
+}
+
+h1 {
+	padding:25px;
+	
+}
+.buttonn {
+	background-color: #F0EBDB;
+	color: #E3DECD;
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+	padding: 5px 10px;
+	position: absolute;
+	bottom:20px ;
+	left: 550px;
+}
+.buttonn:hover {
+	background-color: #E3DECD;
+	color: #F0EBDB;
+	border: 3px solid
+}
+.stockImg {
+	width:60%;
+	padding: 80px;
+}
+
+.benjiImg {
+	width:60%;
+	padding: 80px;
+}
+.researchTitle {
+	font-size:65px;
+	text-align:center;
+ 	line-height: 1.2;
+	color:#181F51;
+
+}
+.researchSub {
+	color: #28A3EF;
+	font-size: 45px;
+	text-align: left;
+}
+.researchText {
+	width: 75%;
+	font-size: 20px;
+	line-height: 1.5;
+	width: 45%;
+
+}
+	
+
+.slideShowContainer {
+	background: #E3DECD;
+	width: 95vw;
+	margin-bottom: 50px;
+	padding-bottom:25px;
+}
+
+ 
+.xpCont {
+	background: #E3DECD;
+	width: 1200px;
+	border-radius:25px;
+	display: flex;
+
+}
+
+.educationCont {
+	background: #E3DECD;
+	width: 1200px;
+	border-radius:25px;
+}
+.jobDescription {
+	align-self: end;
+
+}
+.rightJobBox {
+	display: grid;
+    grid-template-rows: 1fr auto;
+
+}
+
+}
+
+} /* closes 1200px+ */
+
+
+
